@@ -14,4 +14,6 @@ app.delete("/", (req, res) => {
   return res.json("This is a delete request");
 });
 
-app.listen(3000);
+const port = process.env.PORT || 5000;
+
+app.listen(port);
